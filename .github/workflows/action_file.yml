@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '0 0 * * *' # every 5 minu
+    - cron: '0 0 * * *' # everyday 
 
 jobs:
   build:
@@ -30,7 +30,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+          git diff-index --quiet HEAD || (git commit -a -m "add new cat file" --allow-empty)
           git push
       
           
