@@ -2,7 +2,7 @@ name: run main.py
 
 on:
   schedule:
-    - cron: '* * 1,28-31 * *' # 28 to 31 of the month
+    - cron: '* * 1,28-31 * *' # 1st and 28 to 31 of the month
 
 jobs:
   build:
